@@ -15,7 +15,7 @@
     <h2>Edit Note</h2>
     <form method="POST" action="/notes/<%= data.id %>/edit">
         <input type="text" name="title" value="<%= data.title %>" required/>
-        <input type="text" name="body" value="<%= data.body %>" required/>
+        <input type="textarea" name="body" value="<%= data.body %>" required/>
         <input type="color" name="color" value="<%= data.color %>"/>
         <% if (data.starred == true) { %>
             <input type="checkbox" name="starred" value="true" checked/>

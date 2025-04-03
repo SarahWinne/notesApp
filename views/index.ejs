@@ -15,14 +15,14 @@
     <% data.forEach(function(user){ %>
       <div class="flexNote">
         <% if (user.starred == true) { %>
-          <div class="noteBody" style="background-color: <%=user.color%>; cursor: pointer; border: thick, double, yellow;" onclick="location.href='/notes/<%= user.id %>/edit';">
+          <div class="noteBody" style="background-color: <%=user.color%>; border: thick, solid, yellow;" onclick="location.href='/notes/<%= user.id %>/edit';">
             <h1 class="text"><%= user.title %></h1>
             <p class="text"><%= user.body %></p>
           </div>
           <button class="button" href='/notes/<%= user.id %>/edit'>Edit</button>
           <button class="button" href='/notes/<%= user.id %>/delete'>Delete</button>
         <% } else { %>
-          <div class="noteBody" style="background-color: <%=user.color%>; cursor: pointer;" >
+          <div class="noteBody" style="background-color: <%=user.color%>;" >
             <h1 class="text"><%= user.title %></h1>
             <p class="text"><%= user.body %></p>
           </div> 

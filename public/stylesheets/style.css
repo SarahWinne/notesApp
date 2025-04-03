@@ -34,6 +34,14 @@ body {
   text-overflow: ellipsis;
 }
 
+.button {
+  display: none;
+}
+
+.noteBody:hover + .button, .button:hover {
+  display: inline-block;
+}
+
 table, td {
   border: 1px solid black;
 }

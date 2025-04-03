@@ -18,16 +18,18 @@
           <div class="noteBody" style="background-color: <%=user.color%>; cursor: pointer; border: thick, double" onclick="location.href='/notes/<%= user.id %>/edit';">
             <h1 class="text"><%= user.title %></h1>
             <p class="text"><%= user.body %></p>
+            <button class="button" onclick="location.href='/notes/<%= user.id %>/edit';">Edit</button>
+            <button class="button" onclick="location.href='/notes/<%= user.id %>/delete';">Delete</button>
           </div>
-          <button onclick="location.href='/notes/<%= user.id %>/edit';">Edit</button>
-          <button onclick="location.href='/notes/<%= user.id %>/delete';">Delete</button>
         <% } else { %>
           <div class="noteBody" style="background-color: <%=user.color%>; cursor: pointer;" onclick="location.href='/notes/<%= user.id %>/edit';">
             <h1 class="text"><%= user.title %></h1>
             <p class="text"><%= user.body %></p>
+            <button class="button" onclick="location.href='/notes/<%= user.id %>/edit';">Edit</button>
+            <button class="button" onclick="location.href='/notes/<%= user.id %>/delete';">Delete</button>
           </div> 
-          <button href="/notes/<%= user.id %>/edit">Edit</button>
-          <button href="/notes/<%= user.id %>/delete">Delete</button>
+          <!-- <button class="button" href="/notes/<%= user.id %>/edit">Edit</button>
+          <button class="button" href="/notes/<%= user.id %>/delete">Delete</button> -->
         <% } %>
       </div>
     <% }); %>

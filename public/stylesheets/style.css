@@ -35,14 +35,6 @@ body {
   text-overflow: ellipsis;
 }
 
-.button {
-  display: none;
-}
-
-.flexNote:hover + .button {
-  display: inline-block;
-}
-
 table, td {
   border: 1px solid black;
 }

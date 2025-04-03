@@ -38,7 +38,7 @@ body {
   display: none;
 }
 
-.noteBody:hover + .button, .button:hover {
+.flexNote:hover + .button {
   display: inline-block;
 }
 

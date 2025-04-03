@@ -12,12 +12,12 @@ body {
 .flexNote {
   display: flex;
   flex-wrap: wrap;
-  width: 220px; 
-  height: 220px;
+  width: 230px; 
+  height: 230px;
 }
 .noteBody {
-  width: 220px; 
-  /* height: 220px; */
+  width: 230px; 
+  height: 230px;
   border: 1px solid rgba(0, 0, 0, 0.124);
   border-radius: 10px;
   padding: 10px;
@@ -29,6 +29,7 @@ body {
 }
 
 .text {
+  width: 200px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import HobbyItem from './HobbyItem'
+import Demo from './Demo'
 
 export default function Hobbies(){
     const [hobbies, setHobbies]= useState([])
@@ -30,6 +31,10 @@ export default function Hobbies(){
             )}
         </ul> )
         }
+
+        <Demo>
+
+        </Demo>
     </>
 }
 
